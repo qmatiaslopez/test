@@ -10,6 +10,11 @@
     Require all granted
   </Directory>
 
+  {% if ansible_os_family == 'Debian' %}
   ErrorLog ${APACHE_LOG_DIR}/{{ virtual_server }}_error.log
   CustomLog ${APACHE_LOG_DIR}/{{ virtual_server }}_access.log combined
+  {% else %}
+  ErrorLog /var/log/httpd/{{ virtual_server }}_error.log
+  CustomLog /var/log/httpd/{{ virtual_server }}_access.log combined
+  {% endif %}
 </VirtualHost>
