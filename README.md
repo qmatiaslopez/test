@@ -82,6 +82,3 @@ ansible-playbook -i inventories/inventory.ini playbooks/hardening.yml --become -
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia Creative Commons CC0 1.0 Universal.
-
-Citations:
-[1] [paste.txt](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/52490061/6f2ac677-8d89-4b46-be5e-35e628dc8a39/paste.txt)
