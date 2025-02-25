@@ -15,13 +15,13 @@ Antes de comenzar, asegúrate de tener:
 
 ```
 obligatorio2025/
-├── inventories/          # Archivos de inventario
-├── playbooks/            # Playbooks específicos
-├── roles/                # Roles modulares
-├── templates/            # Plantillas para configuraciones
-├── files/                # Archivos estáticos y documentación
-├── site.yml              # Playbook principal
-└── README.md             # Este archivo
+├── collections/         # Colecciones requeridas
+├── files/               # Archivos estáticos y documentación
+│   └── images/          # Imágenes para documentación
+├── inventories/         # Archivos de inventario
+├── playbooks/           # Playbooks específicos
+├── templates/           # Plantillas para configuraciones
+└── README.md            # Este archivo
 ```
 
 ## ⚙️ Configuración
@@ -65,9 +65,6 @@ ansible-playbook -i inventories/inventory.ini playbooks/web_setup.yml --become -
 
 # Aplicar medidas de seguridad en Ubuntu
 ansible-playbook -i inventories/inventory.ini playbooks/hardening.yml --become --ask-become-pass
-
-# Ejecutar todo el despliegue
-ansible-playbook -i inventories/inventory.ini site.yml --become --ask-become-pass
 ```
 
 ## 📝 Funcionalidades
@@ -85,3 +82,6 @@ ansible-playbook -i inventories/inventory.ini site.yml --become --ask-become-pas
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia Creative Commons CC0 1.0 Universal.
+
+Citations:
+[1] [paste.txt](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/52490061/6f2ac677-8d89-4b46-be5e-35e628dc8a39/paste.txt)

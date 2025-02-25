@@ -1,0 +1,2157 @@
+# Estructura del proyecto: test
+
+📂 test/
+    📄 LICENSE
+    ┌──────────────────────────────────────────────────┐
+    │ Creative Commons Legal Code
+    │ 
+    │ CC0 1.0 Universal
+    │ 
+    │     CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+    │     LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN
+    │     ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
+    │     INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES
+    │     REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS
+    │     PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM
+    │     THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED
+    │     HEREUNDER.
+    │ 
+    │ Statement of Purpose
+    │ 
+    │ The laws of most jurisdictions throughout the world automatically confer
+    │ exclusive Copyright and Related Rights (defined below) upon the creator
+    │ and subsequent owner(s) (each and all, an "owner") of an original work of
+    │ authorship and/or a database (each, a "Work").
+    │ 
+    │ Certain owners wish to permanently relinquish those rights to a Work for
+    │ the purpose of contributing to a commons of creative, cultural and
+    │ scientific works ("Commons") that the public can reliably and without fear
+    │ of later claims of infringement build upon, modify, incorporate in other
+    │ works, reuse and redistribute as freely as possible in any form whatsoever
+    │ and for any purposes, including without limitation commercial purposes.
+    │ These owners may contribute to the Commons to promote the ideal of a free
+    │ culture and the further production of creative, cultural and scientific
+    │ works, or to gain reputation or greater distribution for their Work in
+    │ part through the use and efforts of others.
+    │ 
+    │ For these and/or other purposes and motivations, and without any
+    │ expectation of additional consideration or compensation, the person
+    │ associating CC0 with a Work (the "Affirmer"), to the extent that he or she
+    │ is an owner of Copyright and Related Rights in the Work, voluntarily
+    │ elects to apply CC0 to the Work and publicly distribute the Work under its
+    │ terms, with knowledge of his or her Copyright and Related Rights in the
+    │ Work and the meaning and intended legal effect of CC0 on those rights.
+    │ 
+    │ 1. Copyright and Related Rights. A Work made available under CC0 may be
+    │ protected by copyright and related or neighboring rights ("Copyright and
+    │ Related Rights"). Copyright and Related Rights include, but are not
+    │ limited to, the following:
+    │ 
+    │   i. the right to reproduce, adapt, distribute, perform, display,
+    │      communicate, and translate a Work;
+    │  ii. moral rights retained by the original author(s) and/or performer(s);
+    │ iii. publicity and privacy rights pertaining to a person's image or
+    │      likeness depicted in a Work;
+    │  iv. rights protecting against unfair competition in regards to a Work,
+    │      subject to the limitations in paragraph 4(a), below;
+    │   v. rights protecting the extraction, dissemination, use and reuse of data
+    │      in a Work;
+    │  vi. database rights (such as those arising under Directive 96/9/EC of the
+    │      European Parliament and of the Council of 11 March 1996 on the legal
+    │      protection of databases, and under any national implementation
+    │      thereof, including any amended or successor version of such
+    │      directive); and
+    │ vii. other similar, equivalent or corresponding rights throughout the
+    │      world based on applicable law or treaty, and any national
+    │      implementations thereof.
+    │ 
+    │ 2. Waiver. To the greatest extent permitted by, but not in contravention
+    │ of, applicable law, Affirmer hereby overtly, fully, permanently,
+    │ irrevocably and unconditionally waives, abandons, and surrenders all of
+    │ Affirmer's Copyright and Related Rights and associated claims and causes
+    │ of action, whether now known or unknown (including existing as well as
+    │ future claims and causes of action), in the Work (i) in all territories
+    │ worldwide, (ii) for the maximum duration provided by applicable law or
+    │ treaty (including future time extensions), (iii) in any current or future
+    │ medium and for any number of copies, and (iv) for any purpose whatsoever,
+    │ including without limitation commercial, advertising or promotional
+    │ purposes (the "Waiver"). Affirmer makes the Waiver for the benefit of each
+    │ member of the public at large and to the detriment of Affirmer's heirs and
+    │ successors, fully intending that such Waiver shall not be subject to
+    │ revocation, rescission, cancellation, termination, or any other legal or
+    │ equitable action to disrupt the quiet enjoyment of the Work by the public
+    │ as contemplated by Affirmer's express Statement of Purpose.
+    │ 
+    │ 3. Public License Fallback. Should any part of the Waiver for any reason
+    │ be judged legally invalid or ineffective under applicable law, then the
+    │ Waiver shall be preserved to the maximum extent permitted taking into
+    │ account Affirmer's express Statement of Purpose. In addition, to the
+    │ extent the Waiver is so judged Affirmer hereby grants to each affected
+    │ person a royalty-free, non transferable, non sublicensable, non exclusive,
+    │ irrevocable and unconditional license to exercise Affirmer's Copyright and
+    │ Related Rights in the Work (i) in all territories worldwide, (ii) for the
+    │ maximum duration provided by applicable law or treaty (including future
+    │ time extensions), (iii) in any current or future medium and for any number
+    │ of copies, and (iv) for any purpose whatsoever, including without
+    │ limitation commercial, advertising or promotional purposes (the
+    │ "License"). The License shall be deemed effective as of the date CC0 was
+    │ applied by Affirmer to the Work. Should any part of the License for any
+    │ reason be judged legally invalid or ineffective under applicable law, such
+    │ partial invalidity or ineffectiveness shall not invalidate the remainder
+    │ of the License, and in such case Affirmer hereby affirms that he or she
+    │ will not (i) exercise any of his or her remaining Copyright and Related
+    │ Rights in the Work or (ii) assert any associated claims and causes of
+    │ action with respect to the Work, in either case contrary to Affirmer's
+    │ express Statement of Purpose.
+    │ 
+    │ 4. Limitations and Disclaimers.
+    │ 
+    │  a. No trademark or patent rights held by Affirmer are waived, abandoned,
+    │     surrendered, licensed or otherwise affected by this document.
+    │  b. Affirmer offers the Work as-is and makes no representations or
+    │     warranties of any kind concerning the Work, express, implied,
+    │     statutory or otherwise, including without limitation warranties of
+    │     title, merchantability, fitness for a particular purpose, non
+    │     infringement, or the absence of latent or other defects, accuracy, or
+    │     the present or absence of errors, whether or not discoverable, all to
+    │     the greatest extent permissible under applicable law.
+    │  c. Affirmer disclaims responsibility for clearing rights of other persons
+    │     that may apply to the Work or any use thereof, including without
+    │     limitation any person's Copyright and Related Rights in the Work.
+    │     Further, Affirmer disclaims responsibility for obtaining any necessary
+    │     consents, permissions or other rights required for any use of the
+    │     Work.
+    │  d. Affirmer understands and acknowledges that Creative Commons is not a
+    │     party to this document and has no duty or obligation with respect to
+    │     this CC0 or use of the Work.
+    └──────────────────────────────────────────────────┘
+
+    📄 README.md
+    ┌──────────────────────────────────────────────────┐
+    │ # 🚀 Obligatorio 2025 - Taller de Servidores Linux
+    │ 
+    │ Este repositorio contiene la configuración automatizada con Ansible para desplegar y configurar servidores web en entornos Linux (Ubuntu y CentOS).
+    │ 
+    │ ## 📋 Requisitos previos
+    │ 
+    │ Antes de comenzar, asegúrate de tener:
+    │ 
+    │ - ✅ Ansible instalado (versión 2.9 o superior)
+    │ - ✅ Acceso SSH a los servidores de destino
+    │ - ✅ Colección ansible.posix instalada
+    │ - ✅ Permisos de sudo en los servidores de destino
+    │ 
+    │ ## 🛠️ Estructura del proyecto
+    │ 
+    │ ```
+    │ obligatorio2025/
+    │ ├── inventories/          # Archivos de inventario
+    │ ├── playbooks/            # Playbooks específicos
+    │ ├── roles/                # Roles modulares
+    │ ├── templates/            # Plantillas para configuraciones
+    │ ├── files/                # Archivos estáticos y documentación
+    │ ├── site.yml              # Playbook principal
+    │ └── README.md             # Este archivo
+    │ ```
+    │ 
+    │ ## ⚙️ Configuración
+    │ 
+    │ 1. Clona este repositorio:
+    │    ```bash
+    │    git clone https://github.com/MV288481/obligatorio2025.git
+    │    cd obligatorio2025
+    │    ```
+    │ 
+    │ 2. Instala las colecciones requeridas:
+    │    ```bash
+    │    ansible-galaxy collection install -r collections/requirements.yml
+    │    ```
+    │ 
+    │ 3. Verifica la conectividad con los servidores:
+    │    ```bash
+    │    ansible -i inventories/inventory.ini all -m ping
+    │    ```
+    │ 
+    │ ## 🚀 Ejecución
+    │ 
+    │ ### Comandos ad-hoc
+    │ 
+    │ ```bash
+    │ # Verificar uptime en todos los servidores
+    │ ansible -i inventories/inventory.ini all -m command -a "uptime"
+    │ 
+    │ # Instalar apache en servidores web
+    │ ansible -i inventories/inventory.ini webserver -m dnf -a "name=httpd state=present" --become --ask-become-pass
+    │ 
+    │ # Verificar espacio en disco en servidores Ubuntu
+    │ ansible -i inventories/inventory.ini ubuntu -m command -a "df -hT"
+    │ ```
+    │ 
+    │ ### Playbooks
+    │ 
+    │ ```bash
+    │ # Configurar servidor web Apache
+    │ ansible-playbook -i inventories/inventory.ini playbooks/web_setup.yml --become --ask-become-pass
+    │ 
+    │ # Aplicar medidas de seguridad en Ubuntu
+    │ ansible-playbook -i inventories/inventory.ini playbooks/hardening.yml --become --ask-become-pass
+    │ 
+    │ # Ejecutar todo el despliegue
+    │ ansible-playbook -i inventories/inventory.ini site.yml --become --ask-become-pass
+    │ ```
+    │ 
+    │ ## 📝 Funcionalidades
+    │ 
+    │ - 🔒 **Hardening de seguridad**: Configuración de UFW en Ubuntu
+    │ - 🌐 **Servidor web**: Instalación y configuración de Apache
+    │ - 🔄 **Virtualhost**: Configuración de virtualhost para www.ejemplo.com.uy
+    │ - 📄 **Página personalizada**: Despliegue de página HTML con información del servidor
+    │ 
+    │ ## 👥 Autores
+    │ 
+    │ - Sol Varietti - 288481
+    │ - Caetano Rodriguez - 241102
+    │ 
+    │ ## 📄 Licencia
+    │ 
+    │ Este proyecto está bajo la Licencia Creative Commons CC0 1.0 Universal.
+    └──────────────────────────────────────────────────┘
+
+    📄 estructura_proyecto.txt
+    ┌──────────────────────────────────────────────────┐
+    │ # Estructura del proyecto: test
+    │ 
+    │ 📂 test/
+    │     📄 LICENSE
+    │     ┌──────────────────────────────────────────────────┐
+    │     │ Creative Commons Legal Code
+    │     │ 
+    │     │ CC0 1.0 Universal
+    │     │ 
+    │     │     CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+    │     │     LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN
+    │     │     ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
+    │     │     INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES
+    │     │     REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS
+    │     │     PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM
+    │     │     THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED
+    │     │     HEREUNDER.
+    │     │ 
+    │     │ Statement of Purpose
+    │     │ 
+    │     │ The laws of most jurisdictions throughout the world automatically confer
+    │     │ exclusive Copyright and Related Rights (defined below) upon the creator
+    │     │ and subsequent owner(s) (each and all, an "owner") of an original work of
+    │     │ authorship and/or a database (each, a "Work").
+    │     │ 
+    │     │ Certain owners wish to permanently relinquish those rights to a Work for
+    │     │ the purpose of contributing to a commons of creative, cultural and
+    │     │ scientific works ("Commons") that the public can reliably and without fear
+    │     │ of later claims of infringement build upon, modify, incorporate in other
+    │     │ works, reuse and redistribute as freely as possible in any form whatsoever
+    │     │ and for any purposes, including without limitation commercial purposes.
+    │     │ These owners may contribute to the Commons to promote the ideal of a free
+    │     │ culture and the further production of creative, cultural and scientific
+    │     │ works, or to gain reputation or greater distribution for their Work in
+    │     │ part through the use and efforts of others.
+    │     │ 
+    │     │ For these and/or other purposes and motivations, and without any
+    │     │ expectation of additional consideration or compensation, the person
+    │     │ associating CC0 with a Work (the "Affirmer"), to the extent that he or she
+    │     │ is an owner of Copyright and Related Rights in the Work, voluntarily
+    │     │ elects to apply CC0 to the Work and publicly distribute the Work under its
+    │     │ terms, with knowledge of his or her Copyright and Related Rights in the
+    │     │ Work and the meaning and intended legal effect of CC0 on those rights.
+    │     │ 
+    │     │ 1. Copyright and Related Rights. A Work made available under CC0 may be
+    │     │ protected by copyright and related or neighboring rights ("Copyright and
+    │     │ Related Rights"). Copyright and Related Rights include, but are not
+    │     │ limited to, the following:
+    │     │ 
+    │     │   i. the right to reproduce, adapt, distribute, perform, display,
+    │     │      communicate, and translate a Work;
+    │     │  ii. moral rights retained by the original author(s) and/or performer(s);
+    │     │ iii. publicity and privacy rights pertaining to a person's image or
+    │     │      likeness depicted in a Work;
+    │     │  iv. rights protecting against unfair competition in regards to a Work,
+    │     │      subject to the limitations in paragraph 4(a), below;
+    │     │   v. rights protecting the extraction, dissemination, use and reuse of data
+    │     │      in a Work;
+    │     │  vi. database rights (such as those arising under Directive 96/9/EC of the
+    │     │      European Parliament and of the Council of 11 March 1996 on the legal
+    │     │      protection of databases, and under any national implementation
+    │     │      thereof, including any amended or successor version of such
+    │     │      directive); and
+    │     │ vii. other similar, equivalent or corresponding rights throughout the
+    │     │      world based on applicable law or treaty, and any national
+    │     │      implementations thereof.
+    │     │ 
+    │     │ 2. Waiver. To the greatest extent permitted by, but not in contravention
+    │     │ of, applicable law, Affirmer hereby overtly, fully, permanently,
+    │     │ irrevocably and unconditionally waives, abandons, and surrenders all of
+    │     │ Affirmer's Copyright and Related Rights and associated claims and causes
+    │     │ of action, whether now known or unknown (including existing as well as
+    │     │ future claims and causes of action), in the Work (i) in all territories
+    │     │ worldwide, (ii) for the maximum duration provided by applicable law or
+    │     │ treaty (including future time extensions), (iii) in any current or future
+    │     │ medium and for any number of copies, and (iv) for any purpose whatsoever,
+    │     │ including without limitation commercial, advertising or promotional
+    │     │ purposes (the "Waiver"). Affirmer makes the Waiver for the benefit of each
+    │     │ member of the public at large and to the detriment of Affirmer's heirs and
+    │     │ successors, fully intending that such Waiver shall not be subject to
+    │     │ revocation, rescission, cancellation, termination, or any other legal or
+    │     │ equitable action to disrupt the quiet enjoyment of the Work by the public
+    │     │ as contemplated by Affirmer's express Statement of Purpose.
+    │     │ 
+    │     │ 3. Public License Fallback. Should any part of the Waiver for any reason
+    │     │ be judged legally invalid or ineffective under applicable law, then the
+    │     │ Waiver shall be preserved to the maximum extent permitted taking into
+    │     │ account Affirmer's express Statement of Purpose. In addition, to the
+    │     │ extent the Waiver is so judged Affirmer hereby grants to each affected
+    │     │ person a royalty-free, non transferable, non sublicensable, non exclusive,
+    │     │ irrevocable and unconditional license to exercise Affirmer's Copyright and
+    │     │ Related Rights in the Work (i) in all territories worldwide, (ii) for the
+    │     │ maximum duration provided by applicable law or treaty (including future
+    │     │ time extensions), (iii) in any current or future medium and for any number
+    │     │ of copies, and (iv) for any purpose whatsoever, including without
+    │     │ limitation commercial, advertising or promotional purposes (the
+    │     │ "License"). The License shall be deemed effective as of the date CC0 was
+    │     │ applied by Affirmer to the Work. Should any part of the License for any
+    │     │ reason be judged legally invalid or ineffective under applicable law, such
+    │     │ partial invalidity or ineffectiveness shall not invalidate the remainder
+    │     │ of the License, and in such case Affirmer hereby affirms that he or she
+    │     │ will not (i) exercise any of his or her remaining Copyright and Related
+    │     │ Rights in the Work or (ii) assert any associated claims and causes of
+    │     │ action with respect to the Work, in either case contrary to Affirmer's
+    │     │ express Statement of Purpose.
+    │     │ 
+    │     │ 4. Limitations and Disclaimers.
+    │     │ 
+    │     │  a. No trademark or patent rights held by Affirmer are waived, abandoned,
+    │     │     surrendered, licensed or otherwise affected by this document.
+    │     │  b. Affirmer offers the Work as-is and makes no representations or
+    │     │     warranties of any kind concerning the Work, express, implied,
+    │     │     statutory or otherwise, including without limitation warranties of
+    │     │     title, merchantability, fitness for a particular purpose, non
+    │     │     infringement, or the absence of latent or other defects, accuracy, or
+    │     │     the present or absence of errors, whether or not discoverable, all to
+    │     │     the greatest extent permissible under applicable law.
+    │     │  c. Affirmer disclaims responsibility for clearing rights of other persons
+    │     │     that may apply to the Work or any use thereof, including without
+    │     │     limitation any person's Copyright and Related Rights in the Work.
+    │     │     Further, Affirmer disclaims responsibility for obtaining any necessary
+    │     │     consents, permissions or other rights required for any use of the
+    │     │     Work.
+    │     │  d. Affirmer understands and acknowledges that Creative Commons is not a
+    └──────────────────────────────────────────────────┘
+
+    📄 report.py
+    ┌──────────────────────────────────────────────────┐
+    │ import os
+    │ 
+    │ def crear_estructura_directorio(directorio_raiz, archivo_salida, extensiones_a_mostrar=None):
+    │     with open(archivo_salida, 'w', encoding='utf-8') as archivo:
+    │         archivo.write(f"# Estructura del proyecto: {os.path.basename(directorio_raiz)}\n\n")
+    │         
+    │         for ruta, directorios, archivos in os.walk(directorio_raiz):
+    │             # Calcular el nivel de profundidad
+    │             profundidad = ruta.replace(directorio_raiz, '').count(os.sep)
+    │             indentacion = '    ' * profundidad
+    │             
+    │             # Escribir el nombre del directorio
+    │             ruta_relativa = ruta.replace(directorio_raiz, '').lstrip(os.sep)
+    │             if ruta_relativa:
+    │                 archivo.write(f"{indentacion}📂 {os.path.basename(ruta)}/\n")
+    │             else:
+    │                 archivo.write(f"📂 {os.path.basename(directorio_raiz)}/\n")
+    │             
+    │             # Escribir los nombres de los archivos y su contenido
+    │             for nombre_archivo in sorted(archivos):
+    │                 ruta_completa = os.path.join(ruta, nombre_archivo)
+    │                 
+    │                 # Verificar si debemos mostrar esta extensión
+    │                 _, extension = os.path.splitext(nombre_archivo)
+    │                 if extensiones_a_mostrar is not None and extension.lower() not in extensiones_a_mostrar:
+    │                     archivo.write(f"{indentacion}    📄 {nombre_archivo} (contenido no mostrado)\n")
+    │                     continue
+    │                 
+    │                 archivo.write(f"{indentacion}    📄 {nombre_archivo}\n")
+    │                 
+    │                 # Intentar leer el contenido del archivo
+    │                 try:
+    │                     with open(ruta_completa, 'r', encoding='utf-8') as archivo_contenido:
+    │                         contenido = archivo_contenido.read()
+    │                         # Agregar el contenido con indentación adicional
+    │                         archivo.write(f"{indentacion}    ┌{'─' * 50}┐\n")
+    │                         for linea in contenido.splitlines():
+    │                             archivo.write(f"{indentacion}    │ {linea}\n")
+    │                         archivo.write(f"{indentacion}    └{'─' * 50}┘\n\n")
+    │                 except (UnicodeDecodeError, PermissionError, IsADirectoryError):
+    │                     archivo.write(f"{indentacion}    ┌{'─' * 50}┐\n")
+    │                     archivo.write(f"{indentacion}    │ [No se puede mostrar el contenido - archivo binario o error de lectura]\n")
+    │                     archivo.write(f"{indentacion}    └{'─' * 50}┘\n\n")
+    │ 
+    │ if __name__ == "__main__":
+    │     # Obtener el directorio actual donde se ejecuta el script
+    │     directorio_raiz = os.getcwd()
+    │     archivo_salida = 'estructura_proyecto.txt'
+    │     
+    │     # Puedes especificar qué extensiones de archivo mostrar
+    │     # Si quieres mostrar todas, deja esta variable como None
+    │     # Ejemplo: extensiones = ['.py', '.txt', '.md', '.json']
+    │     extensiones = None
+    │     
+    │     crear_estructura_directorio(directorio_raiz, archivo_salida, extensiones)
+    │     print(f"La estructura del directorio con contenido ha sido guardada en '{archivo_salida}'")
+    └──────────────────────────────────────────────────┘
+
+    📂 .git/
+        📄 COMMIT_EDITMSG
+        ┌──────────────────────────────────────────────────┐
+        │ Remove UFW installation and SSH configuration tasks from hardening role
+        └──────────────────────────────────────────────────┘
+
+        📄 FETCH_HEAD
+        ┌──────────────────────────────────────────────────┐
+        │ 2b47a21746499878152a06c8092967f6ba2b9e7a		branch 'main' of https://github.com/qmatiaslopez/test
+        └──────────────────────────────────────────────────┘
+
+        📄 HEAD
+        ┌──────────────────────────────────────────────────┐
+        │ ref: refs/heads/main
+        └──────────────────────────────────────────────────┘
+
+        📄 ORIG_HEAD
+        ┌──────────────────────────────────────────────────┐
+        │ 2b47a21746499878152a06c8092967f6ba2b9e7a
+        └──────────────────────────────────────────────────┘
+
+        📄 config
+        ┌──────────────────────────────────────────────────┐
+        │ [core]
+        │ 	repositoryformatversion = 0
+        │ 	filemode = false
+        │ 	bare = false
+        │ 	logallrefupdates = true
+        │ 	symlinks = false
+        │ 	ignorecase = true
+        │ [remote "origin"]
+        │ 	url = https://github.com/qmatiaslopez/test
+        │ 	fetch = +refs/heads/*:refs/remotes/origin/*
+        │ [branch "main"]
+        │ 	remote = origin
+        │ 	merge = refs/heads/main
+        └──────────────────────────────────────────────────┘
+
+        📄 description
+        ┌──────────────────────────────────────────────────┐
+        │ Unnamed repository; edit this file 'description' to name the repository.
+        └──────────────────────────────────────────────────┘
+
+        📄 index
+        ┌──────────────────────────────────────────────────┐
+        │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+        └──────────────────────────────────────────────────┘
+
+        📂 hooks/
+            📄 applypatch-msg.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/bin/sh
+            │ #
+            │ # An example hook script to check the commit log message taken by
+            │ # applypatch from an e-mail message.
+            │ #
+            │ # The hook should exit with non-zero status after issuing an
+            │ # appropriate message if it wants to stop the commit.  The hook is
+            │ # allowed to edit the commit message file.
+            │ #
+            │ # To enable this hook, rename this file to "applypatch-msg".
+            │ 
+            │ . git-sh-setup
+            │ commitmsg="$(git rev-parse --git-path hooks/commit-msg)"
+            │ test -x "$commitmsg" && exec "$commitmsg" ${1+"$@"}
+            │ :
+            └──────────────────────────────────────────────────┘
+
+            📄 commit-msg.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/bin/sh
+            │ #
+            │ # An example hook script to check the commit log message.
+            │ # Called by "git commit" with one argument, the name of the file
+            │ # that has the commit message.  The hook should exit with non-zero
+            │ # status after issuing an appropriate message if it wants to stop the
+            │ # commit.  The hook is allowed to edit the commit message file.
+            │ #
+            │ # To enable this hook, rename this file to "commit-msg".
+            │ 
+            │ # Uncomment the below to add a Signed-off-by line to the message.
+            │ # Doing this in a hook is a bad idea in general, but the prepare-commit-msg
+            │ # hook is more suited to it.
+            │ #
+            │ # SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+            │ # grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
+            │ 
+            │ # This example catches duplicate Signed-off-by lines.
+            │ 
+            │ test "" = "$(grep '^Signed-off-by: ' "$1" |
+            │ 	 sort | uniq -c | sed -e '/^[ 	]*1[ 	]/d')" || {
+            │ 	echo >&2 Duplicate Signed-off-by lines.
+            │ 	exit 1
+            │ }
+            └──────────────────────────────────────────────────┘
+
+            📄 fsmonitor-watchman.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/usr/bin/perl
+            │ 
+            │ use strict;
+            │ use warnings;
+            │ use IPC::Open2;
+            │ 
+            │ # An example hook script to integrate Watchman
+            │ # (https://facebook.github.io/watchman/) with git to speed up detecting
+            │ # new and modified files.
+            │ #
+            │ # The hook is passed a version (currently 2) and last update token
+            │ # formatted as a string and outputs to stdout a new update token and
+            │ # all files that have been modified since the update token. Paths must
+            │ # be relative to the root of the working tree and separated by a single NUL.
+            │ #
+            │ # To enable this hook, rename this file to "query-watchman" and set
+            │ # 'git config core.fsmonitor .git/hooks/query-watchman'
+            │ #
+            │ my ($version, $last_update_token) = @ARGV;
+            │ 
+            │ # Uncomment for debugging
+            │ # print STDERR "$0 $version $last_update_token\n";
+            │ 
+            │ # Check the hook interface version
+            │ if ($version ne 2) {
+            │ 	die "Unsupported query-fsmonitor hook version '$version'.\n" .
+            │ 	    "Falling back to scanning...\n";
+            │ }
+            │ 
+            │ my $git_work_tree = get_working_dir();
+            │ 
+            │ my $retry = 1;
+            │ 
+            │ my $json_pkg;
+            │ eval {
+            │ 	require JSON::XS;
+            │ 	$json_pkg = "JSON::XS";
+            │ 	1;
+            │ } or do {
+            │ 	require JSON::PP;
+            │ 	$json_pkg = "JSON::PP";
+            │ };
+            │ 
+            │ launch_watchman();
+            │ 
+            │ sub launch_watchman {
+            │ 	my $o = watchman_query();
+            │ 	if (is_work_tree_watched($o)) {
+            │ 		output_result($o->{clock}, @{$o->{files}});
+            │ 	}
+            │ }
+            │ 
+            │ sub output_result {
+            │ 	my ($clockid, @files) = @_;
+            │ 
+            │ 	# Uncomment for debugging watchman output
+            │ 	# open (my $fh, ">", ".git/watchman-output.out");
+            │ 	# binmode $fh, ":utf8";
+            │ 	# print $fh "$clockid\n@files\n";
+            │ 	# close $fh;
+            │ 
+            │ 	binmode STDOUT, ":utf8";
+            │ 	print $clockid;
+            │ 	print "\0";
+            │ 	local $, = "\0";
+            │ 	print @files;
+            │ }
+            │ 
+            │ sub watchman_clock {
+            │ 	my $response = qx/watchman clock "$git_work_tree"/;
+            │ 	die "Failed to get clock id on '$git_work_tree'.\n" .
+            │ 		"Falling back to scanning...\n" if $? != 0;
+            │ 
+            │ 	return $json_pkg->new->utf8->decode($response);
+            │ }
+            │ 
+            │ sub watchman_query {
+            │ 	my $pid = open2(\*CHLD_OUT, \*CHLD_IN, 'watchman -j --no-pretty')
+            │ 	or die "open2() failed: $!\n" .
+            │ 	"Falling back to scanning...\n";
+            │ 
+            │ 	# In the query expression below we're asking for names of files that
+            │ 	# changed since $last_update_token but not from the .git folder.
+            │ 	#
+            │ 	# To accomplish this, we're using the "since" generator to use the
+            │ 	# recency index to select candidate nodes and "fields" to limit the
+            │ 	# output to file names only. Then we're using the "expression" term to
+            │ 	# further constrain the results.
+            │ 	my $last_update_line = "";
+            │ 	if (substr($last_update_token, 0, 1) eq "c") {
+            │ 		$last_update_token = "\"$last_update_token\"";
+            │ 		$last_update_line = qq[\n"since": $last_update_token,];
+            │ 	}
+            │ 	my $query = <<"	END";
+            │ 		["query", "$git_work_tree", {$last_update_line
+            │ 			"fields": ["name"],
+            │ 			"expression": ["not", ["dirname", ".git"]]
+            │ 		}]
+            │ 	END
+            │ 
+            │ 	# Uncomment for debugging the watchman query
+            │ 	# open (my $fh, ">", ".git/watchman-query.json");
+            │ 	# print $fh $query;
+            │ 	# close $fh;
+            │ 
+            │ 	print CHLD_IN $query;
+            │ 	close CHLD_IN;
+            │ 	my $response = do {local $/; <CHLD_OUT>};
+            │ 
+            │ 	# Uncomment for debugging the watch response
+            │ 	# open ($fh, ">", ".git/watchman-response.json");
+            │ 	# print $fh $response;
+            │ 	# close $fh;
+            │ 
+            │ 	die "Watchman: command returned no output.\n" .
+            │ 	"Falling back to scanning...\n" if $response eq "";
+            │ 	die "Watchman: command returned invalid output: $response\n" .
+            │ 	"Falling back to scanning...\n" unless $response =~ /^\{/;
+            │ 
+            │ 	return $json_pkg->new->utf8->decode($response);
+            │ }
+            │ 
+            │ sub is_work_tree_watched {
+            │ 	my ($output) = @_;
+            │ 	my $error = $output->{error};
+            │ 	if ($retry > 0 and $error and $error =~ m/unable to resolve root .* directory (.*) is not watched/) {
+            │ 		$retry--;
+            │ 		my $response = qx/watchman watch "$git_work_tree"/;
+            │ 		die "Failed to make watchman watch '$git_work_tree'.\n" .
+            │ 		    "Falling back to scanning...\n" if $? != 0;
+            │ 		$output = $json_pkg->new->utf8->decode($response);
+            │ 		$error = $output->{error};
+            │ 		die "Watchman: $error.\n" .
+            │ 		"Falling back to scanning...\n" if $error;
+            │ 
+            │ 		# Uncomment for debugging watchman output
+            │ 		# open (my $fh, ">", ".git/watchman-output.out");
+            │ 		# close $fh;
+            │ 
+            │ 		# Watchman will always return all files on the first query so
+            │ 		# return the fast "everything is dirty" flag to git and do the
+            │ 		# Watchman query just to get it over with now so we won't pay
+            │ 		# the cost in git to look up each individual file.
+            │ 		my $o = watchman_clock();
+            │ 		$error = $output->{error};
+            │ 
+            │ 		die "Watchman: $error.\n" .
+            │ 		"Falling back to scanning...\n" if $error;
+            │ 
+            │ 		output_result($o->{clock}, ("/"));
+            │ 		$last_update_token = $o->{clock};
+            │ 
+            │ 		eval { launch_watchman() };
+            │ 		return 0;
+            │ 	}
+            │ 
+            │ 	die "Watchman: $error.\n" .
+            │ 	"Falling back to scanning...\n" if $error;
+            │ 
+            │ 	return 1;
+            │ }
+            │ 
+            │ sub get_working_dir {
+            │ 	my $working_dir;
+            │ 	if ($^O =~ 'msys' || $^O =~ 'cygwin') {
+            │ 		$working_dir = Win32::GetCwd();
+            │ 		$working_dir =~ tr/\\/\//;
+            │ 	} else {
+            │ 		require Cwd;
+            │ 		$working_dir = Cwd::cwd();
+            │ 	}
+            │ 
+            │ 	return $working_dir;
+            │ }
+            └──────────────────────────────────────────────────┘
+
+            📄 post-update.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/bin/sh
+            │ #
+            │ # An example hook script to prepare a packed repository for use over
+            │ # dumb transports.
+            │ #
+            │ # To enable this hook, rename this file to "post-update".
+            │ 
+            │ exec git update-server-info
+            └──────────────────────────────────────────────────┘
+
+            📄 pre-applypatch.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/bin/sh
+            │ #
+            │ # An example hook script to verify what is about to be committed
+            │ # by applypatch from an e-mail message.
+            │ #
+            │ # The hook should exit with non-zero status after issuing an
+            │ # appropriate message if it wants to stop the commit.
+            │ #
+            │ # To enable this hook, rename this file to "pre-applypatch".
+            │ 
+            │ . git-sh-setup
+            │ precommit="$(git rev-parse --git-path hooks/pre-commit)"
+            │ test -x "$precommit" && exec "$precommit" ${1+"$@"}
+            │ :
+            └──────────────────────────────────────────────────┘
+
+            📄 pre-commit.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/bin/sh
+            │ #
+            │ # An example hook script to verify what is about to be committed.
+            │ # Called by "git commit" with no arguments.  The hook should
+            │ # exit with non-zero status after issuing an appropriate message if
+            │ # it wants to stop the commit.
+            │ #
+            │ # To enable this hook, rename this file to "pre-commit".
+            │ 
+            │ if git rev-parse --verify HEAD >/dev/null 2>&1
+            │ then
+            │ 	against=HEAD
+            │ else
+            │ 	# Initial commit: diff against an empty tree object
+            │ 	against=$(git hash-object -t tree /dev/null)
+            │ fi
+            │ 
+            │ # If you want to allow non-ASCII filenames set this variable to true.
+            │ allownonascii=$(git config --type=bool hooks.allownonascii)
+            │ 
+            │ # Redirect output to stderr.
+            │ exec 1>&2
+            │ 
+            │ # Cross platform projects tend to avoid non-ASCII filenames; prevent
+            │ # them from being added to the repository. We exploit the fact that the
+            │ # printable range starts at the space character and ends with tilde.
+            │ if [ "$allownonascii" != "true" ] &&
+            │ 	# Note that the use of brackets around a tr range is ok here, (it's
+            │ 	# even required, for portability to Solaris 10's /usr/bin/tr), since
+            │ 	# the square bracket bytes happen to fall in the designated range.
+            │ 	test $(git diff-index --cached --name-only --diff-filter=A -z $against |
+            │ 	  LC_ALL=C tr -d '[ -~]\0' | wc -c) != 0
+            │ then
+            │ 	cat <<\EOF
+            │ Error: Attempt to add a non-ASCII file name.
+            │ 
+            │ This can cause problems if you want to work with people on other platforms.
+            │ 
+            │ To be portable it is advisable to rename the file.
+            │ 
+            │ If you know what you are doing you can disable this check using:
+            │ 
+            │   git config hooks.allownonascii true
+            │ EOF
+            │ 	exit 1
+            │ fi
+            │ 
+            │ # If there are whitespace errors, print the offending file names and fail.
+            │ exec git diff-index --check --cached $against --
+            └──────────────────────────────────────────────────┘
+
+            📄 pre-merge-commit.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/bin/sh
+            │ #
+            │ # An example hook script to verify what is about to be committed.
+            │ # Called by "git merge" with no arguments.  The hook should
+            │ # exit with non-zero status after issuing an appropriate message to
+            │ # stderr if it wants to stop the merge commit.
+            │ #
+            │ # To enable this hook, rename this file to "pre-merge-commit".
+            │ 
+            │ . git-sh-setup
+            │ test -x "$GIT_DIR/hooks/pre-commit" &&
+            │         exec "$GIT_DIR/hooks/pre-commit"
+            │ :
+            └──────────────────────────────────────────────────┘
+
+            📄 pre-push.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/bin/sh
+            │ 
+            │ # An example hook script to verify what is about to be pushed.  Called by "git
+            │ # push" after it has checked the remote status, but before anything has been
+            │ # pushed.  If this script exits with a non-zero status nothing will be pushed.
+            │ #
+            │ # This hook is called with the following parameters:
+            │ #
+            │ # $1 -- Name of the remote to which the push is being done
+            │ # $2 -- URL to which the push is being done
+            │ #
+            │ # If pushing without using a named remote those arguments will be equal.
+            │ #
+            │ # Information about the commits which are being pushed is supplied as lines to
+            │ # the standard input in the form:
+            │ #
+            │ #   <local ref> <local oid> <remote ref> <remote oid>
+            │ #
+            │ # This sample shows how to prevent push of commits where the log message starts
+            │ # with "WIP" (work in progress).
+            │ 
+            │ remote="$1"
+            │ url="$2"
+            │ 
+            │ zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+            │ 
+            │ while read local_ref local_oid remote_ref remote_oid
+            │ do
+            │ 	if test "$local_oid" = "$zero"
+            │ 	then
+            │ 		# Handle delete
+            │ 		:
+            │ 	else
+            │ 		if test "$remote_oid" = "$zero"
+            │ 		then
+            │ 			# New branch, examine all commits
+            │ 			range="$local_oid"
+            │ 		else
+            │ 			# Update to existing branch, examine new commits
+            │ 			range="$remote_oid..$local_oid"
+            │ 		fi
+            │ 
+            │ 		# Check for WIP commit
+            │ 		commit=$(git rev-list -n 1 --grep '^WIP' "$range")
+            │ 		if test -n "$commit"
+            │ 		then
+            │ 			echo >&2 "Found WIP commit in $local_ref, not pushing"
+            │ 			exit 1
+            │ 		fi
+            │ 	fi
+            │ done
+            │ 
+            │ exit 0
+            └──────────────────────────────────────────────────┘
+
+            📄 pre-rebase.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/bin/sh
+            │ #
+            │ # Copyright (c) 2006, 2008 Junio C Hamano
+            │ #
+            │ # The "pre-rebase" hook is run just before "git rebase" starts doing
+            │ # its job, and can prevent the command from running by exiting with
+            │ # non-zero status.
+            │ #
+            │ # The hook is called with the following parameters:
+            │ #
+            │ # $1 -- the upstream the series was forked from.
+            │ # $2 -- the branch being rebased (or empty when rebasing the current branch).
+            │ #
+            │ # This sample shows how to prevent topic branches that are already
+            │ # merged to 'next' branch from getting rebased, because allowing it
+            │ # would result in rebasing already published history.
+            │ 
+            │ publish=next
+            │ basebranch="$1"
+            │ if test "$#" = 2
+            │ then
+            │ 	topic="refs/heads/$2"
+            │ else
+            │ 	topic=`git symbolic-ref HEAD` ||
+            │ 	exit 0 ;# we do not interrupt rebasing detached HEAD
+            │ fi
+            │ 
+            │ case "$topic" in
+            │ refs/heads/??/*)
+            │ 	;;
+            │ *)
+            │ 	exit 0 ;# we do not interrupt others.
+            │ 	;;
+            │ esac
+            │ 
+            │ # Now we are dealing with a topic branch being rebased
+            │ # on top of master.  Is it OK to rebase it?
+            │ 
+            │ # Does the topic really exist?
+            │ git show-ref -q "$topic" || {
+            │ 	echo >&2 "No such branch $topic"
+            │ 	exit 1
+            │ }
+            │ 
+            │ # Is topic fully merged to master?
+            │ not_in_master=`git rev-list --pretty=oneline ^master "$topic"`
+            │ if test -z "$not_in_master"
+            │ then
+            │ 	echo >&2 "$topic is fully merged to master; better remove it."
+            │ 	exit 1 ;# we could allow it, but there is no point.
+            │ fi
+            │ 
+            │ # Is topic ever merged to next?  If so you should not be rebasing it.
+            │ only_next_1=`git rev-list ^master "^$topic" ${publish} | sort`
+            │ only_next_2=`git rev-list ^master           ${publish} | sort`
+            │ if test "$only_next_1" = "$only_next_2"
+            │ then
+            │ 	not_in_topic=`git rev-list "^$topic" master`
+            │ 	if test -z "$not_in_topic"
+            │ 	then
+            │ 		echo >&2 "$topic is already up to date with master"
+            │ 		exit 1 ;# we could allow it, but there is no point.
+            │ 	else
+            │ 		exit 0
+            │ 	fi
+            │ else
+            │ 	not_in_next=`git rev-list --pretty=oneline ^${publish} "$topic"`
+            │ 	/usr/bin/perl -e '
+            │ 		my $topic = $ARGV[0];
+            │ 		my $msg = "* $topic has commits already merged to public branch:\n";
+            │ 		my (%not_in_next) = map {
+            │ 			/^([0-9a-f]+) /;
+            │ 			($1 => 1);
+            │ 		} split(/\n/, $ARGV[1]);
+            │ 		for my $elem (map {
+            │ 				/^([0-9a-f]+) (.*)$/;
+            │ 				[$1 => $2];
+            │ 			} split(/\n/, $ARGV[2])) {
+            │ 			if (!exists $not_in_next{$elem->[0]}) {
+            │ 				if ($msg) {
+            │ 					print STDERR $msg;
+            │ 					undef $msg;
+            │ 				}
+            │ 				print STDERR " $elem->[1]\n";
+            │ 			}
+            │ 		}
+            │ 	' "$topic" "$not_in_next" "$not_in_master"
+            │ 	exit 1
+            │ fi
+            │ 
+            │ <<\DOC_END
+            │ 
+            │ This sample hook safeguards topic branches that have been
+            │ published from being rewound.
+            │ 
+            │ The workflow assumed here is:
+            │ 
+            │  * Once a topic branch forks from "master", "master" is never
+            │    merged into it again (either directly or indirectly).
+            │ 
+            │  * Once a topic branch is fully cooked and merged into "master",
+            │    it is deleted.  If you need to build on top of it to correct
+            │    earlier mistakes, a new topic branch is created by forking at
+            │    the tip of the "master".  This is not strictly necessary, but
+            │    it makes it easier to keep your history simple.
+            │ 
+            │  * Whenever you need to test or publish your changes to topic
+            │    branches, merge them into "next" branch.
+            │ 
+            │ The script, being an example, hardcodes the publish branch name
+            │ to be "next", but it is trivial to make it configurable via
+            │ $GIT_DIR/config mechanism.
+            │ 
+            │ With this workflow, you would want to know:
+            │ 
+            │ (1) ... if a topic branch has ever been merged to "next".  Young
+            │     topic branches can have stupid mistakes you would rather
+            │     clean up before publishing, and things that have not been
+            │     merged into other branches can be easily rebased without
+            │     affecting other people.  But once it is published, you would
+            │     not want to rewind it.
+            │ 
+            │ (2) ... if a topic branch has been fully merged to "master".
+            │     Then you can delete it.  More importantly, you should not
+            │     build on top of it -- other people may already want to
+            │     change things related to the topic as patches against your
+            │     "master", so if you need further changes, it is better to
+            │     fork the topic (perhaps with the same name) afresh from the
+            │     tip of "master".
+            │ 
+            │ Let's look at this example:
+            │ 
+            │ 		   o---o---o---o---o---o---o---o---o---o "next"
+            │ 		  /       /           /           /
+            │ 		 /   a---a---b A     /           /
+            │ 		/   /               /           /
+            │ 	       /   /   c---c---c---c B         /
+            │ 	      /   /   /             \         /
+            │ 	     /   /   /   b---b C     \       /
+            │ 	    /   /   /   /             \     /
+            │     ---o---o---o---o---o---o---o---o---o---o---o "master"
+            │ 
+            │ 
+            │ A, B and C are topic branches.
+            │ 
+            │  * A has one fix since it was merged up to "next".
+            │ 
+            │  * B has finished.  It has been fully merged up to "master" and "next",
+            │    and is ready to be deleted.
+            │ 
+            │  * C has not merged to "next" at all.
+            │ 
+            │ We would want to allow C to be rebased, refuse A, and encourage
+            │ B to be deleted.
+            │ 
+            │ To compute (1):
+            │ 
+            │ 	git rev-list ^master ^topic next
+            │ 	git rev-list ^master        next
+            │ 
+            │ 	if these match, topic has not merged in next at all.
+            │ 
+            │ To compute (2):
+            │ 
+            │ 	git rev-list master..topic
+            │ 
+            │ 	if this is empty, it is fully merged to "master".
+            │ 
+            │ DOC_END
+            └──────────────────────────────────────────────────┘
+
+            📄 pre-receive.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/bin/sh
+            │ #
+            │ # An example hook script to make use of push options.
+            │ # The example simply echoes all push options that start with 'echoback='
+            │ # and rejects all pushes when the "reject" push option is used.
+            │ #
+            │ # To enable this hook, rename this file to "pre-receive".
+            │ 
+            │ if test -n "$GIT_PUSH_OPTION_COUNT"
+            │ then
+            │ 	i=0
+            │ 	while test "$i" -lt "$GIT_PUSH_OPTION_COUNT"
+            │ 	do
+            │ 		eval "value=\$GIT_PUSH_OPTION_$i"
+            │ 		case "$value" in
+            │ 		echoback=*)
+            │ 			echo "echo from the pre-receive-hook: ${value#*=}" >&2
+            │ 			;;
+            │ 		reject)
+            │ 			exit 1
+            │ 		esac
+            │ 		i=$((i + 1))
+            │ 	done
+            │ fi
+            └──────────────────────────────────────────────────┘
+
+            📄 prepare-commit-msg.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/bin/sh
+            │ #
+            │ # An example hook script to prepare the commit log message.
+            │ # Called by "git commit" with the name of the file that has the
+            │ # commit message, followed by the description of the commit
+            │ # message's source.  The hook's purpose is to edit the commit
+            │ # message file.  If the hook fails with a non-zero status,
+            │ # the commit is aborted.
+            │ #
+            │ # To enable this hook, rename this file to "prepare-commit-msg".
+            │ 
+            │ # This hook includes three examples. The first one removes the
+            │ # "# Please enter the commit message..." help message.
+            │ #
+            │ # The second includes the output of "git diff --name-status -r"
+            │ # into the message, just before the "git status" output.  It is
+            │ # commented because it doesn't cope with --amend or with squashed
+            │ # commits.
+            │ #
+            │ # The third example adds a Signed-off-by line to the message, that can
+            │ # still be edited.  This is rarely a good idea.
+            │ 
+            │ COMMIT_MSG_FILE=$1
+            │ COMMIT_SOURCE=$2
+            │ SHA1=$3
+            │ 
+            │ /usr/bin/perl -i.bak -ne 'print unless(m/^. Please enter the commit message/..m/^#$/)' "$COMMIT_MSG_FILE"
+            │ 
+            │ # case "$COMMIT_SOURCE,$SHA1" in
+            │ #  ,|template,)
+            │ #    /usr/bin/perl -i.bak -pe '
+            │ #       print "\n" . `git diff --cached --name-status -r`
+            │ # 	 if /^#/ && $first++ == 0' "$COMMIT_MSG_FILE" ;;
+            │ #  *) ;;
+            │ # esac
+            │ 
+            │ # SOB=$(git var GIT_COMMITTER_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+            │ # git interpret-trailers --in-place --trailer "$SOB" "$COMMIT_MSG_FILE"
+            │ # if test -z "$COMMIT_SOURCE"
+            │ # then
+            │ #   /usr/bin/perl -i.bak -pe 'print "\n" if !$first_line++' "$COMMIT_MSG_FILE"
+            │ # fi
+            └──────────────────────────────────────────────────┘
+
+            📄 push-to-checkout.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/bin/sh
+            │ 
+            │ # An example hook script to update a checked-out tree on a git push.
+            │ #
+            │ # This hook is invoked by git-receive-pack(1) when it reacts to git
+            │ # push and updates reference(s) in its repository, and when the push
+            │ # tries to update the branch that is currently checked out and the
+            │ # receive.denyCurrentBranch configuration variable is set to
+            │ # updateInstead.
+            │ #
+            │ # By default, such a push is refused if the working tree and the index
+            │ # of the remote repository has any difference from the currently
+            │ # checked out commit; when both the working tree and the index match
+            │ # the current commit, they are updated to match the newly pushed tip
+            │ # of the branch. This hook is to be used to override the default
+            │ # behaviour; however the code below reimplements the default behaviour
+            │ # as a starting point for convenient modification.
+            │ #
+            │ # The hook receives the commit with which the tip of the current
+            │ # branch is going to be updated:
+            │ commit=$1
+            │ 
+            │ # It can exit with a non-zero status to refuse the push (when it does
+            │ # so, it must not modify the index or the working tree).
+            │ die () {
+            │ 	echo >&2 "$*"
+            │ 	exit 1
+            │ }
+            │ 
+            │ # Or it can make any necessary changes to the working tree and to the
+            │ # index to bring them to the desired state when the tip of the current
+            │ # branch is updated to the new commit, and exit with a zero status.
+            │ #
+            │ # For example, the hook can simply run git read-tree -u -m HEAD "$1"
+            │ # in order to emulate git fetch that is run in the reverse direction
+            │ # with git push, as the two-tree form of git read-tree -u -m is
+            │ # essentially the same as git switch or git checkout that switches
+            │ # branches while keeping the local changes in the working tree that do
+            │ # not interfere with the difference between the branches.
+            │ 
+            │ # The below is a more-or-less exact translation to shell of the C code
+            │ # for the default behaviour for git's push-to-checkout hook defined in
+            │ # the push_to_deploy() function in builtin/receive-pack.c.
+            │ #
+            │ # Note that the hook will be executed from the repository directory,
+            │ # not from the working tree, so if you want to perform operations on
+            │ # the working tree, you will have to adapt your code accordingly, e.g.
+            │ # by adding "cd .." or using relative paths.
+            │ 
+            │ if ! git update-index -q --ignore-submodules --refresh
+            │ then
+            │ 	die "Up-to-date check failed"
+            │ fi
+            │ 
+            │ if ! git diff-files --quiet --ignore-submodules --
+            │ then
+            │ 	die "Working directory has unstaged changes"
+            │ fi
+            │ 
+            │ # This is a rough translation of:
+            │ #
+            │ #   head_has_history() ? "HEAD" : EMPTY_TREE_SHA1_HEX
+            │ if git cat-file -e HEAD 2>/dev/null
+            │ then
+            │ 	head=HEAD
+            │ else
+            │ 	head=$(git hash-object -t tree --stdin </dev/null)
+            │ fi
+            │ 
+            │ if ! git diff-index --quiet --cached --ignore-submodules $head --
+            │ then
+            │ 	die "Working directory has staged changes"
+            │ fi
+            │ 
+            │ if ! git read-tree -u -m "$commit"
+            │ then
+            │ 	die "Could not update working tree to new HEAD"
+            │ fi
+            └──────────────────────────────────────────────────┘
+
+            📄 sendemail-validate.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/bin/sh
+            │ 
+            │ # An example hook script to validate a patch (and/or patch series) before
+            │ # sending it via email.
+            │ #
+            │ # The hook should exit with non-zero status after issuing an appropriate
+            │ # message if it wants to prevent the email(s) from being sent.
+            │ #
+            │ # To enable this hook, rename this file to "sendemail-validate".
+            │ #
+            │ # By default, it will only check that the patch(es) can be applied on top of
+            │ # the default upstream branch without conflicts in a secondary worktree. After
+            │ # validation (successful or not) of the last patch of a series, the worktree
+            │ # will be deleted.
+            │ #
+            │ # The following config variables can be set to change the default remote and
+            │ # remote ref that are used to apply the patches against:
+            │ #
+            │ #   sendemail.validateRemote (default: origin)
+            │ #   sendemail.validateRemoteRef (default: HEAD)
+            │ #
+            │ # Replace the TODO placeholders with appropriate checks according to your
+            │ # needs.
+            │ 
+            │ validate_cover_letter () {
+            │ 	file="$1"
+            │ 	# TODO: Replace with appropriate checks (e.g. spell checking).
+            │ 	true
+            │ }
+            │ 
+            │ validate_patch () {
+            │ 	file="$1"
+            │ 	# Ensure that the patch applies without conflicts.
+            │ 	git am -3 "$file" || return
+            │ 	# TODO: Replace with appropriate checks for this patch
+            │ 	# (e.g. checkpatch.pl).
+            │ 	true
+            │ }
+            │ 
+            │ validate_series () {
+            │ 	# TODO: Replace with appropriate checks for the whole series
+            │ 	# (e.g. quick build, coding style checks, etc.).
+            │ 	true
+            │ }
+            │ 
+            │ # main -------------------------------------------------------------------------
+            │ 
+            │ if test "$GIT_SENDEMAIL_FILE_COUNTER" = 1
+            │ then
+            │ 	remote=$(git config --default origin --get sendemail.validateRemote) &&
+            │ 	ref=$(git config --default HEAD --get sendemail.validateRemoteRef) &&
+            │ 	worktree=$(mktemp --tmpdir -d sendemail-validate.XXXXXXX) &&
+            │ 	git worktree add -fd --checkout "$worktree" "refs/remotes/$remote/$ref" &&
+            │ 	git config --replace-all sendemail.validateWorktree "$worktree"
+            │ else
+            │ 	worktree=$(git config --get sendemail.validateWorktree)
+            │ fi || {
+            │ 	echo "sendemail-validate: error: failed to prepare worktree" >&2
+            │ 	exit 1
+            │ }
+            │ 
+            │ unset GIT_DIR GIT_WORK_TREE
+            │ cd "$worktree" &&
+            │ 
+            │ if grep -q "^diff --git " "$1"
+            │ then
+            │ 	validate_patch "$1"
+            │ else
+            │ 	validate_cover_letter "$1"
+            │ fi &&
+            │ 
+            │ if test "$GIT_SENDEMAIL_FILE_COUNTER" = "$GIT_SENDEMAIL_FILE_TOTAL"
+            │ then
+            │ 	git config --unset-all sendemail.validateWorktree &&
+            │ 	trap 'git worktree remove -ff "$worktree"' EXIT &&
+            │ 	validate_series
+            │ fi
+            └──────────────────────────────────────────────────┘
+
+            📄 update.sample
+            ┌──────────────────────────────────────────────────┐
+            │ #!/bin/sh
+            │ #
+            │ # An example hook script to block unannotated tags from entering.
+            │ # Called by "git receive-pack" with arguments: refname sha1-old sha1-new
+            │ #
+            │ # To enable this hook, rename this file to "update".
+            │ #
+            │ # Config
+            │ # ------
+            │ # hooks.allowunannotated
+            │ #   This boolean sets whether unannotated tags will be allowed into the
+            │ #   repository.  By default they won't be.
+            │ # hooks.allowdeletetag
+            │ #   This boolean sets whether deleting tags will be allowed in the
+            │ #   repository.  By default they won't be.
+            │ # hooks.allowmodifytag
+            │ #   This boolean sets whether a tag may be modified after creation. By default
+            │ #   it won't be.
+            │ # hooks.allowdeletebranch
+            │ #   This boolean sets whether deleting branches will be allowed in the
+            │ #   repository.  By default they won't be.
+            │ # hooks.denycreatebranch
+            │ #   This boolean sets whether remotely creating branches will be denied
+            │ #   in the repository.  By default this is allowed.
+            │ #
+            │ 
+            │ # --- Command line
+            │ refname="$1"
+            │ oldrev="$2"
+            │ newrev="$3"
+            │ 
+            │ # --- Safety check
+            │ if [ -z "$GIT_DIR" ]; then
+            │ 	echo "Don't run this script from the command line." >&2
+            │ 	echo " (if you want, you could supply GIT_DIR then run" >&2
+            │ 	echo "  $0 <ref> <oldrev> <newrev>)" >&2
+            │ 	exit 1
+            │ fi
+            │ 
+            │ if [ -z "$refname" -o -z "$oldrev" -o -z "$newrev" ]; then
+            │ 	echo "usage: $0 <ref> <oldrev> <newrev>" >&2
+            │ 	exit 1
+            │ fi
+            │ 
+            │ # --- Config
+            │ allowunannotated=$(git config --type=bool hooks.allowunannotated)
+            │ allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+            │ denycreatebranch=$(git config --type=bool hooks.denycreatebranch)
+            │ allowdeletetag=$(git config --type=bool hooks.allowdeletetag)
+            │ allowmodifytag=$(git config --type=bool hooks.allowmodifytag)
+            │ 
+            │ # check for no description
+            │ projectdesc=$(sed -e '1q' "$GIT_DIR/description")
+            │ case "$projectdesc" in
+            │ "Unnamed repository"* | "")
+            │ 	echo "*** Project description file hasn't been set" >&2
+            │ 	exit 1
+            │ 	;;
+            │ esac
+            │ 
+            │ # --- Check types
+            │ # if $newrev is 0000...0000, it's a commit to delete a ref.
+            │ zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+            │ if [ "$newrev" = "$zero" ]; then
+            │ 	newrev_type=delete
+            │ else
+            │ 	newrev_type=$(git cat-file -t $newrev)
+            │ fi
+            │ 
+            │ case "$refname","$newrev_type" in
+            │ 	refs/tags/*,commit)
+            │ 		# un-annotated tag
+            │ 		short_refname=${refname##refs/tags/}
+            │ 		if [ "$allowunannotated" != "true" ]; then
+            │ 			echo "*** The un-annotated tag, $short_refname, is not allowed in this repository" >&2
+            │ 			echo "*** Use 'git tag [ -a | -s ]' for tags you want to propagate." >&2
+            │ 			exit 1
+            │ 		fi
+            │ 		;;
+            │ 	refs/tags/*,delete)
+            │ 		# delete tag
+            │ 		if [ "$allowdeletetag" != "true" ]; then
+            │ 			echo "*** Deleting a tag is not allowed in this repository" >&2
+            │ 			exit 1
+            │ 		fi
+            │ 		;;
+            │ 	refs/tags/*,tag)
+            │ 		# annotated tag
+            │ 		if [ "$allowmodifytag" != "true" ] && git rev-parse $refname > /dev/null 2>&1
+            │ 		then
+            │ 			echo "*** Tag '$refname' already exists." >&2
+            │ 			echo "*** Modifying a tag is not allowed in this repository." >&2
+            │ 			exit 1
+            │ 		fi
+            │ 		;;
+            │ 	refs/heads/*,commit)
+            │ 		# branch
+            │ 		if [ "$oldrev" = "$zero" -a "$denycreatebranch" = "true" ]; then
+            │ 			echo "*** Creating a branch is not allowed in this repository" >&2
+            │ 			exit 1
+            │ 		fi
+            │ 		;;
+            │ 	refs/heads/*,delete)
+            │ 		# delete branch
+            │ 		if [ "$allowdeletebranch" != "true" ]; then
+            │ 			echo "*** Deleting a branch is not allowed in this repository" >&2
+            │ 			exit 1
+            │ 		fi
+            │ 		;;
+            │ 	refs/remotes/*,commit)
+            │ 		# tracking branch
+            │ 		;;
+            │ 	refs/remotes/*,delete)
+            │ 		# delete tracking branch
+            │ 		if [ "$allowdeletebranch" != "true" ]; then
+            │ 			echo "*** Deleting a tracking branch is not allowed in this repository" >&2
+            │ 			exit 1
+            │ 		fi
+            │ 		;;
+            │ 	*)
+            │ 		# Anything else (is there anything else?)
+            │ 		echo "*** Update hook: unknown type of update to ref $refname of type $newrev_type" >&2
+            │ 		exit 1
+            │ 		;;
+            │ esac
+            │ 
+            │ # --- Finished
+            │ exit 0
+            └──────────────────────────────────────────────────┘
+
+        📂 info/
+            📄 exclude
+            ┌──────────────────────────────────────────────────┐
+            │ # git ls-files --others --exclude-from=.git/info/exclude
+            │ # Lines that start with '#' are comments.
+            │ # For a project mostly in C, the following would be a good set of
+            │ # exclude patterns (uncomment them if you want to use them):
+            │ # *.[oa]
+            │ # *~
+            └──────────────────────────────────────────────────┘
+
+        📂 logs/
+            📄 HEAD
+            ┌──────────────────────────────────────────────────┐
+            │ 0000000000000000000000000000000000000000 5a52b48085ea9616e0ad0ae7cd8c5ffcd9f57d6a qmatiaslopez <ml301333@fi365.ort.edu.uy> 1740525121 -0300	commit (initial): Add initial configuration and resources for Linux server workshop
+            │ 5a52b48085ea9616e0ad0ae7cd8c5ffcd9f57d6a 085f05559490d96f1570528a7816804aa44196c3 qmatiaslopez <ml301333@fi365.ort.edu.uy> 1740525425 -0300	commit: Update README.md with Ansible automation setup and project structure for Linux server workshop
+            │ 085f05559490d96f1570528a7816804aa44196c3 2b47a21746499878152a06c8092967f6ba2b9e7a qmatiaslopez <ml301333@fi365.ort.edu.uy> 1740525747 -0300	commit: Remove UFW installation and SSH configuration tasks from hardening role
+            └──────────────────────────────────────────────────┘
+
+            📂 refs/
+                📂 heads/
+                    📄 main
+                    ┌──────────────────────────────────────────────────┐
+                    │ 0000000000000000000000000000000000000000 5a52b48085ea9616e0ad0ae7cd8c5ffcd9f57d6a qmatiaslopez <ml301333@fi365.ort.edu.uy> 1740525121 -0300	commit (initial): Add initial configuration and resources for Linux server workshop
+                    │ 5a52b48085ea9616e0ad0ae7cd8c5ffcd9f57d6a 085f05559490d96f1570528a7816804aa44196c3 qmatiaslopez <ml301333@fi365.ort.edu.uy> 1740525425 -0300	commit: Update README.md with Ansible automation setup and project structure for Linux server workshop
+                    │ 085f05559490d96f1570528a7816804aa44196c3 2b47a21746499878152a06c8092967f6ba2b9e7a qmatiaslopez <ml301333@fi365.ort.edu.uy> 1740525747 -0300	commit: Remove UFW installation and SSH configuration tasks from hardening role
+                    └──────────────────────────────────────────────────┘
+
+                📂 remotes/
+                    📂 origin/
+                        📄 main
+                        ┌──────────────────────────────────────────────────┐
+                        │ 0000000000000000000000000000000000000000 5a52b48085ea9616e0ad0ae7cd8c5ffcd9f57d6a qmatiaslopez <ml301333@fi365.ort.edu.uy> 1740525131 -0300	update by push
+                        │ 5a52b48085ea9616e0ad0ae7cd8c5ffcd9f57d6a 085f05559490d96f1570528a7816804aa44196c3 qmatiaslopez <ml301333@fi365.ort.edu.uy> 1740525429 -0300	update by push
+                        │ 085f05559490d96f1570528a7816804aa44196c3 2b47a21746499878152a06c8092967f6ba2b9e7a qmatiaslopez <ml301333@fi365.ort.edu.uy> 1740525758 -0300	update by push
+                        └──────────────────────────────────────────────────┘
+
+        📂 objects/
+            📂 00/
+                📄 9c8e81bb30b2b744631f99f5da586616ea8758
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 06/
+                📄 eff57fcc147d45f35da6d673552f557dca668b
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 08/
+                📄 5f05559490d96f1570528a7816804aa44196c3
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 0c/
+                📄 cc439772a2fd912c75f5be93f3542f80be00b2
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 0e/
+                📄 259d42c996742e9e3cba14c677129b2c1b6311
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 12/
+                📄 098e9db0f4c321519316cd29a54bd09436f397
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+                📄 1443e33a33b9bc2dec261b563c9c7ce575f982
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 1a/
+                📄 740c20e3aecd66075832482f557a0d86cbaa78
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 1c/
+                📄 3f763b69126d32f763f268d69185cb155c067f
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 1e/
+                📄 c97e71abf99799617e46334000ee4044b7bf43
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 21/
+                📄 af3194dd4feab7aebe0cb7f1e81ed038399e07
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 28/
+                📄 d93170f6ea8620bf2d58d1367ac26a4b050a7f
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 2b/
+                📄 47a21746499878152a06c8092967f6ba2b9e7a
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 30/
+                📄 ad23672fb635895babb128b576db681664d921
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 51/
+                📄 cc46bf39c9b78ccfc56e57006ebd9f186c62bb
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 54/
+                📄 76eba13c481de84b30bc5b7ca9c993460013d8
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 57/
+                📄 993b2df8bc5d45556b14e4d05c53231a11d876
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 5a/
+                📄 4257f5448a1d84ad7b7efad26f321112987acc
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+                📄 52b48085ea9616e0ad0ae7cd8c5ffcd9f57d6a
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 5f/
+                📄 4214ccc915bf90011b0ad301096d6288c8fdd8
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 60/
+                📄 aa9843be8aca940805b88cdae08399d7b5b9b6
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 61/
+                📄 85a3654bed934e57510beaa691afcdf11b9706
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+                📄 c0af08634cbe7c407cc97107669dedd5eb4593
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 67/
+                📄 3882e61e5de2e13ae37a4d0b560942bbf5341d
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 6a/
+                📄 ebd6b08b48024fb72fcfccbb4394920659a7ce
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 78/
+                📄 3c9f8090416375c29c8f167ec604f1e43cdf55
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 7f/
+                📄 a227513e09764effe2ea5ac1600bece96cb36e
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 80/
+                📄 4107318d6d5ba8825aa4455e512fc1012c834c
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 8d/
+                📄 2d1dafb1d554ae665c5928fc7d953d304539e6
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 9f/
+                📄 2dfbd53516c783b54aa6e829e3eec65056874e
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 a9/
+                📄 51ff71113079fdbf02ea5dd7aeb05c21d7f5d3
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 aa/
+                📄 ac7317057950ff6a18dd1c184839e9cc896618
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 ac/
+                📄 7a8be92d3eae05db921eb537587fa93802d955
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 b7/
+                📄 f068fd0d38dc177607083d7d38726b1e005efb
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 b8/
+                📄 24cac43ebb0bf0ed2b2848ce6561a224d76b35
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 b9/
+                📄 b57adc4d832a2e206fb93737a2309e93529a0f
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 bd/
+                📄 b7c1e78791df2d3b7c90662595d1328209b163
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 c3/
+                📄 1e52af54341c636f3baf462e4b21e44947c78a
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 c4/
+                📄 1ceb9abe52631a5be8e989c9539cdd0cb2fc46
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 d2/
+                📄 0e471f8b8e3c8c78e22a56e9d4ceede45ae687
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+                📄 20fba310513074a3f2004fb82d3b84273cc05f
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 d7/
+                📄 6c44ce5922cfeaa74dd8196e31536f6acaa408
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 e0/
+                📄 233584ec349f4216e0e7806f4aed6c984eef14
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 e7/
+                📄 13412c2f531f280cc5e2f52abe490e4de0e5fd
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 eb/
+                📄 46fc598b7f46f413950a31bd8a874fc9ad26cf
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+                📄 7f4c7dbb3fb6aae031c769f0a0bb1c5bd68ed1
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 fd/
+                📄 9f672a87a8d0ad4f15ae89d1aa627be4c3bac6
+                ┌──────────────────────────────────────────────────┐
+                │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+                └──────────────────────────────────────────────────┘
+
+            📂 info/
+            📂 pack/
+        📂 refs/
+            📂 heads/
+                📄 main
+                ┌──────────────────────────────────────────────────┐
+                │ 2b47a21746499878152a06c8092967f6ba2b9e7a
+                └──────────────────────────────────────────────────┘
+
+            📂 remotes/
+                📂 origin/
+                    📄 main
+                    ┌──────────────────────────────────────────────────┐
+                    │ 2b47a21746499878152a06c8092967f6ba2b9e7a
+                    └──────────────────────────────────────────────────┘
+
+            📂 tags/
+    📂 collections/
+        📄 requirements.yml
+        ┌──────────────────────────────────────────────────┐
+        │ collections: 
+        │   - ansible.posix
+        └──────────────────────────────────────────────────┘
+
+    📂 files/
+        📄 documentación.md
+        ┌──────────────────────────────────────────────────┐
+        │ # Obligatorio Febrero 2025 - Taller de servidores Linux 
+        │ 
+        │ 
+        │ ![LogoORT!](/files/images/logort.png)
+        │ 
+        │ 
+        │ |----------------------------------|-----------------------------------| **Sol Varietti - 288481 / Caetano Rodriguez - 241102** |
+        │ 
+        │ |----------------------------------|----------------------------------| **Profesor: Enrique Verdes / Fecha de entrega: 25/02/2025** |
+        │ 
+        │ 
+        │ ----------------
+        │ 
+        │ 
+        │ ## Introducción
+        │ 
+        │ A lo largo de este documento presentaremos el trabajo de fin de curso del taller de Servidores Linux. El objetivo principal de este trabajo es aplicar los conocimientos adquiridos sobre la configuración y automatización de servidores utilizando Ansible. 
+        │ 
+        │ Para eso, se empleó la herramienta de VirtualBox para llevar a cabo la creación, gestión y virtualización de las 2 máquinas virtuales. En una de estas máquinas se instaló la versión "Server with GUI" del sistema operativo CentOS Stream 9 y en la otra se utilizó la versión "Minimal" del sistema operativo Ubuntu 24.04.  
+        │ 
+        │ El trabajo se basa en varias tareas que abarcan la configuración de inventarios, la ejecución de comandos ad-hoc y el desarrollo de playbook. A modo de aprendizaje se realizó la documentación con formato Markdown; cabe aclarar que, al utilizar Markdown, evitamos tener conflictos con el repositorio GIT.
+        │ 
+        │ En este trabajo se utilizó un repositorio de Git debido a la necesidad de facilitar la colaboración entre los integrantes del equipo, ya que todos pueden trabajar en conjunto sin riesgo de sobrescribir o perder información importante.
+        │ 
+        │ Por otro lado, actua como un respaldo centralizado, permitiendo que culquier persona pueda replicar el entorno y configurar los servidores de manera automatizada mediante Ansible. Esto garantiza que las implementaciones sean reproducibles, consistentes y fáciles de mantener en el tiempo.
+        │ 
+        │ 
+        │ ### Estrucutra de comunicación entre maquinas virtuales
+        │ A continuación, se describe la estructura utilizada para la conexión entre las máquinas virtuales en este entorno de trabajo.
+        │ 
+        │ El escenario cuenta con dos maquinas virtuales que se comunican a través de dos adaptadores de red configurados de la siguiente manera:
+        │ 
+        │ - Adaptador 1 (NAT): Proporciona acceso a Internet a ambas máquinas virtuales, permitiendo la descarga de paquetes y actualizaciones necesarias para su configuración.
+        │   
+        │ - Adaptador 2 (Solo anfitrión): Establece una red privada entre las máquinas virtuales, facilitando la comunicación directa sin depender de una conexión externa.
+        │ Esta configuración permite que las máquinas interactúen entre sí de manera segura, asegurando la conectividad necesaria para la ejecución de Ansible y otras herramientas de administración remota.
+        │ 
+        │ ![diagrama](/files/images/diagrama.png)
+        │ 
+        │ 
+        │ 
+        │ -----
+        │ 
+        │ 
+        │ 
+        │ 
+        │ ## Tarea 1: Configuración del archivo de inventario 
+        │ 
+        │ En esta primera instancia se creará un archivo de inventario en formato INI, que permitirá a Ansible administrar los diferentes servidores agrupándolos en categorías. Se definirán las credenciales y direcciones IP necesarias para acceder a estos servidores.
+        │ 
+        │ ### Archivo *inventory.ini*
+        │ 
+        │ En el siguiente archivo, ubicado dentro de la carpeta Inventories en el home del repositorio obligatorio2025, se definen los servidores administrados por Ansible. Este inventario está estructurado de acuerdo con los requisitos en la letra, creando los grupos Ubuntu y Centos , tomando en cuenta que contienen un host por grupo. Por otro lado, contamos con el grupo Linux, que contiene los subgrupos Ubuntu y Centos, y un grupo webserver, que también cuenta con el servidor Centos.
+        │ 
+        │ ```python
+        │     [centos]
+        │     centos-srv ansible_host=192.168.56.20
+        │ 
+        │     [ubuntu]
+        │     ubuntu-srv ansible_host=192.168.56.10
+        │ 
+        │     [linux:children]
+        │     centos
+        │     ubuntu
+        │ 
+        │     [webserver]
+        │     centos-srv
+        │ 
+        │     [linux:vars]
+        │     ansible_user=sysadmin
+        │ ```
+        │ 
+        │ Además, el archivo define las variables *ansible_user* y *ansible_host*. Estas son vitales para establecer la conexión remota, dado que cada variable permite especificar el usuario para ejecutar las tareas de Ansible y la ip de cada servidor.
+        │ 
+        │         Esto asegura la correcta comunicación entre el controlador y los nodos administrados???? 
+        │ 
+        │ ### Prueba de conexión
+        │ 
+        │ Se realizo una prueba de conexión con el fin de validar que los servidores son accesibles desde la maquina control (centos-srv). Para eso se utilizó el siguiente comando: 
+        │ 
+        │ ```bash
+        │     ansible all -i inventory.ini -m ping
+        │ ```
+        │ 
+        │ El cual arrojo el siguiente resultado. 
+        │ 
+        │ ![pruebadeconexión.t1](/files/images/pruebaconexion.png)
+        │ 
+        │ 
+        │ 
+        │ ------
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ ## Tarea 2: Ejecutar comandos ad-hoc
+        │ 
+        │ Los comandos ad-hoc en Ansible permiten ejecutar comandos, que nos permiten interactuar con los servidores de manera directa y realizar tareas específicas sin necesidad de escribir un playbook completo. Un ejemplo de esto es el comando ejecutado anteriormente para verificar la conexión con los ervidores dentro del inventario.
+        │ 
+        │ Dada la consigna de la tarea, se ejecutarán comandos para realizar tareas específicas como verificar el estado del sistema, instalar software y monitorear el uso del almacenamiento. Estas acciones nos permitirán comprobar la conectividad, la correcta instalación de los servicios y la disponibilidad de recursos en los servidores administrados con Ansible.Estos comandos se ejecutarán desde la máquina de control utilizando la línea de comandos de Ansible y permitirán gestionar múltiples servidores simultáneamente sin requerir configuraciones adicionales.
+        │ 
+        │ Las acciones solicitadas fueron las siguientes: 
+        │ 
+        │ 
+        │ - Verifica el tiempo de actividad (uptime) en todos los servidores:
+        │ El comando aplicado ejecuta el módulo `command` para obtener el tiempo de actividad de todos los servidores especificados dentro de *inventory.ini*.
+        │ 
+        │ 
+        │  ```bash
+        │ ansible -i inventories/inventory.ini all -m command -a "uptime"
+        │  ```
+        │ 
+        │ El resultado arrojó lo siguiente:
+        │ 
+        │ ![uptimesrv](/files/images/uptimeall.png)
+        │ 
+        │ 
+        │ 
+        │ 
+        │ - Instala apache en los servidores web: 
+        │ El comando aplicado realiza la instalación del servidor web Apache en los servidores dentro del subgrupo `webserver`. Se utiliza el módulo `dnf` y las opciones `--become` y `--ask-become-pass` para elevar los permisos del usuario y solicitar la contraseña de root.
+        │ 
+        │ 
+        │ 
+        │  ```bash
+        │ ansible -i inventories/inventory.ini webserver -m dnf -a "name=httpd state=present" --become --ask-become-pass
+        │  ```
+        │ 
+        │ 
+        │ 
+        │ El resultado arrojó lo siguiente:
+        │ 
+        │ ![websrvdnf](/files/images/httpdserweb.png)
+        │ 
+        │ - Recupera el uso de espacio en disco de los servidores Ubuntu:
+        │ El comando aplicado ejecuta `df -h` en los servidores `ubuntu`, proporcionando información sobre el uso del disco en un formato legible para humanos.
+        │ 
+        │ 
+        │  ```bash
+        │ ansible -i inventories/inventory.ini ubuntu -m command -a "df -hT"
+        │  ```
+        │ 
+        │ El resultado arrojó lo siguiente:
+        │ 
+        │ ![df-hTubutu](/files/images/df-hTubunu.png)
+        │ 
+        │         ELEGIR BIEN CUAL 
+        │ 
+        │ ![df-hubutu](/files/images/df-hubuntu.png)
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ ------
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ ## Tarea 3: Crear y ejecutar playbook de Ansible
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        │ 
+        └──────────────────────────────────────────────────┘
+
+        📂 images/
+            📄 df-hTubunu.png
+            ┌──────────────────────────────────────────────────┐
+            │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+            └──────────────────────────────────────────────────┘
+
+            📄 df-hubuntu.png
+            ┌──────────────────────────────────────────────────┐
+            │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+            └──────────────────────────────────────────────────┘
+
+            📄 diagrama.png
+            ┌──────────────────────────────────────────────────┐
+            │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+            └──────────────────────────────────────────────────┘
+
+            📄 httpdserweb.png
+            ┌──────────────────────────────────────────────────┐
+            │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+            └──────────────────────────────────────────────────┘
+
+            📄 logort.png
+            ┌──────────────────────────────────────────────────┐
+            │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+            └──────────────────────────────────────────────────┘
+
+            📄 pruebaconexion.png
+            ┌──────────────────────────────────────────────────┐
+            │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+            └──────────────────────────────────────────────────┘
+
+            📄 uptimeall.png
+            ┌──────────────────────────────────────────────────┐
+            │ [No se puede mostrar el contenido - archivo binario o error de lectura]
+            └──────────────────────────────────────────────────┘
+
+    📂 inventories/
+        📄 inventory.ini
+        ┌──────────────────────────────────────────────────┐
+        │ [centos]
+        │ centos-srv ansible_host=192.168.56.20
+        │ 
+        │ [ubuntu]
+        │ ubuntu-srv ansible_host=192.168.56.10
+        │ 
+        │ [linux:children]
+        │ centos
+        │ ubuntu
+        │ 
+        │ [webserver]
+        │ centos-srv
+        │ 
+        │ [linux:vars]
+        │ ansible_user=sysadmin
+        │ 
+        └──────────────────────────────────────────────────┘
+
+    📂 playbooks/
+        📄 hardening.yml
+        ┌──────────────────────────────────────────────────┐
+        │ ---
+        │ - name: Aplicar medidas de seguridad en Ubuntu
+        │   hosts: ubuntu
+        │   become: true
+        │ 
+        │   tasks:
+        │   - name: Instalar UFW
+        │     apt:
+        │       name: ufw
+        │       state: present
+        │ 
+        │   - name: Configurar reglas de UFW
+        │     ufw:
+        │       state: enabled
+        │       policy: deny
+        │ 
+        │   - name: Permitir SSH en UFW
+        │     ufw:
+        │       rule: allow
+        │       port: ssh
+        │       proto: tcp
+        └──────────────────────────────────────────────────┘
+
+        📄 web_setup.yml
+        ┌──────────────────────────────────────────────────┐
+        │ ---
+        │ - name: Despliegue del servidor Apache
+        │   hosts: webserver
+        │   become: true
+        │   vars:
+        │     virtual_server: "www.ejemplo.com.uy"
+        │ 
+        │   tasks:
+        │   - name: Instalar apache en Red Hat
+        │     ansible.builtin.dnf:
+        │       name: "httpd"
+        │       state: present
+        │     when: ansible_os_family == "RedHat"
+        │ 
+        │   - name: Instalar apache en Debian
+        │     ansible.builtin.apt:
+        │       name: "apache2"
+        │       state: present
+        │     when: ansible_os_family == "Debian"
+        │     
+        │   - name: Definir nombre del servicio apache según distribución
+        │     set_fact:
+        │       apache_service: "{{ 'httpd' if ansible_os_family == 'RedHat' else 'apache2' }}"
+        │       apache_user: "{{ 'apache' if ansible_os_family == 'RedHat' else 'www-data' }}"
+        │       apache_config_dir: "{{ '/etc/httpd/conf' if ansible_os_family == 'RedHat' else '/etc/apache2' }}"
+        │       apache_vhosts_dir: "{{ '/etc/httpd/vhost.d' if ansible_os_family == 'RedHat' else '/etc/apache2/sites-available' }}"
+        │       apache_html_dir: "/var/www/html"
+        │ 
+        │   - name: Iniciar servicio apache
+        │     ansible.builtin.systemd_service:
+        │       name: "{{ apache_service }}"
+        │       state: started
+        │       enabled: true
+        │ 
+        │   - name: Agregar servicio apache en el firewalld (CentOS)
+        │     ansible.posix.firewalld:
+        │       service: "{{ item }}"
+        │       permanent: true
+        │       immediate: true
+        │       state: enabled
+        │     loop:
+        │       - http
+        │       - https
+        │     when: ansible_os_family == "RedHat"
+        │ 
+        │   - name: Permitir tráfico HTTP/HTTPS en UFW (Ubuntu)
+        │     ufw:
+        │       rule: allow
+        │       port: "{{ item }}"
+        │       proto: tcp
+        │     loop:
+        │       - "80"
+        │       - "443"
+        │     when: ansible_os_family == "Debian"
+        │ 
+        │   - name: Página índice principal
+        │     ansible.builtin.template:
+        │       src: ../templates/index.j2
+        │       dest: "{{ apache_html_dir }}/index.html"
+        │       owner: "{{ apache_user }}"
+        │       group: "{{ apache_user }}"
+        │       mode: '0644'
+        │ 
+        │   - name: Agregar registro al archivo hosts
+        │     ansible.builtin.lineinfile:
+        │       path: /etc/hosts
+        │       line: "{{ ansible_default_ipv4.address }} {{ virtual_server }}"
+        │       state: present
+        │   
+        │   - name: Crear directorio para virtualhost
+        │     ansible.builtin.file:
+        │       path: "{{ apache_vhosts_dir }}"
+        │       state: directory
+        │       owner: root
+        │       group: root
+        │       mode: '0755'
+        │     when: ansible_os_family == "RedHat"
+        │ 
+        │   - name: Crear directorio para alojar el sitio
+        │     ansible.builtin.file:
+        │       path: "/var/www/{{ virtual_server }}/html"
+        │       state: directory
+        │       owner: "{{ apache_user }}"
+        │       group: "{{ apache_user }}"
+        │       mode: '0755'
+        │ 
+        │   - name: Configuración de virtualhost
+        │     ansible.builtin.template: 
+        │       src: ../templates/virtualhost.j2
+        │       dest: "{{ apache_vhosts_dir }}/{{ virtual_server }}.conf"
+        │       owner: root
+        │       group: root
+        │       mode: '0644'
+        │     notify: Reiniciar apache
+        │ 
+        │   - name: Habilitar sitio en Apache (Ubuntu)
+        │     command: a2ensite {{ virtual_server }}.conf
+        │     when: ansible_os_family == "Debian"
+        │     notify: Reiniciar apache
+        │ 
+        │   - name: Modificar configuración de apache (CentOS)
+        │     ansible.builtin.lineinfile:
+        │       path: "{{ apache_config_dir }}/httpd.conf"
+        │       line: "IncludeOptional {{ apache_vhosts_dir }}/*.conf"
+        │       state: present
+        │     when: ansible_os_family == "RedHat"
+        │     notify: Reiniciar apache
+        │ 
+        │   - name: Página índice para virtualhost
+        │     ansible.builtin.template:
+        │       src: ../templates/index.j2
+        │       dest: "/var/www/{{ virtual_server }}/html/index.html"
+        │       owner: "{{ apache_user }}"
+        │       group: "{{ apache_user }}"
+        │       mode: '0644'
+        │ 
+        │   handlers:
+        │   - name: Reiniciar apache
+        │     ansible.builtin.systemd_service:
+        │       name: "{{ apache_service }}"
+        │       state: restarted
+        └──────────────────────────────────────────────────┘
+
+    📂 templates/
+        📄 index.j2
+        ┌──────────────────────────────────────────────────┐
+        │ <!DOCTYPE html>
+        │ <html lang="es">
+        │ <head>
+        │     <meta charset="UTF-8">
+        │     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        │     <title>Página de Ejemplo</title>
+        │ </head>
+        │ <body>
+        │     <div>
+        │         <h1>Página de Ejemplo</h1>
+        │         <p>El hostname es: <span>{{ ansible_hostname }}</span></p>
+        │         <p>El día es: <span>{{ ansible_date_time['date'] }}</span></p>
+        │         <p>La hora es: <span>{{ ansible_date_time['time'] }}</span></p>
+        │         <p>La IP es: <span>{{ ansible_all_ipv4_addresses[1] }}</span></p>
+        │     </div>
+        │ </body>
+        │ </html>
+        └──────────────────────────────────────────────────┘
+
+        📄 virtualhost.j2
+        ┌──────────────────────────────────────────────────┐
+        │ <VirtualHost *:80>
+        │   ServerName {{ virtual_server }}
+        │   ServerAlias www.{{ virtual_server }}
+        │   ServerAdmin webmaster@{{ virtual_server }}
+        │   DocumentRoot /var/www/{{ virtual_server }}/html
+        │ 
+        │   <Directory /var/www/{{ virtual_server }}/html>
+        │     Options Indexes FollowSymLinks
+        │     AllowOverride None
+        │     Require all granted
+        │   </Directory>
+        │ 
+        │   ErrorLog ${APACHE_LOG_DIR}/{{ virtual_server }}_error.log
+        │   CustomLog ${APACHE_LOG_DIR}/{{ virtual_server }}_access.log combined
+        │ </VirtualHost>
+        └──────────────────────────────────────────────────┘
+

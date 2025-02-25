@@ -1,5 +1,0 @@
----
-- name: Reiniciar apache
-  ansible.builtin.systemd_service:
-    name: "{{ apache_service }}"
-    state: restarted
